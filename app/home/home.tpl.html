@@ -1,0 +1,13 @@
+<h1>Home</h1>
+
+{{body}}
+
+<ul class="tracks">
+	<li ng-repeat="track in tracks">
+		<a href="" ng-click="clickTrack(track.trackId)">{{track.trackName}}</a>
+	</li>
+</ul>
+
+<a ui-sref="about">About Us</a>
+
+<div ui-view="main" class="pop-up"></div>

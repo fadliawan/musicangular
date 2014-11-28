@@ -1,0 +1,9 @@
+<div ng-init="st = (tracks | filter: {trackId: selectedTrackId})[0]">
+
+{{ st.trackName }}
+<br>by<br>
+{{ st.artistName }}
+
+<button class="btn" ng-click="closePop()">Close</button>
+</div>
+
